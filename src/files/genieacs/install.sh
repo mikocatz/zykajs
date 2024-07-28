@@ -12,7 +12,7 @@ if [[ ! "$konfirmasi" =~ ^[Yy]$ ]]; then
     exit 1
 fi
 
-echo "Memulai instalasi GenieACS..."
+echo -e "${YELLOW}Memulai instalasi GenieACS...${RESET}"
 # Instal Node.js
 echo "Menginstal Node.js..."
 curl -sL https://deb.nodesource.com/setup_14.x -o nodesource_setup.sh
@@ -138,4 +138,4 @@ systemctl enable genieacs-ui
 systemctl start genieacs-ui
 
 echo -e "${GREEN}Instalasi GenieACS selesai!${RESET}"
-echo -e "${BLUE}Buka http://$lokal_ip:3000 di browser untuk akses UI GenieACS.${RESET}"
+echo -e "${GREEN}Buka http://$lokal_ip:3000 di browser untuk akses UI GenieACS.${RESET}"
