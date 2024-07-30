@@ -80,42 +80,6 @@
       parameter: CurrentBitRate
     - label: "'Aktif'"
       parameter: Enable
-- label: "'PPPoE List'"
-  parameter: Device.PPP.Interface
-  type: "'parameter-table'"
-  childParameters:
-    - label: "'Nama'"
-      parameter: Status
-    - label: "'Username'"
-      parameter: Username
-    - label: "'Password'"
-      parameter: Password
-    - label: "'Aktif'"
-      parameter: Enable
-- label: "'WiFi List'"
-  parameter: Device.WiFi.SSID
-  type: "'parameter-table'"
-  childParameters:
-    - label: "'Status'"
-      parameter: Status
-    - label: "'SSID'"
-      parameter: SSID
-    - label: "'Aktif'"
-      parameter: Enable
-- label: "'WLAN List'"
-  parameter: Device.WiFi.AccessPoint
-  type: "'parameter-table'"
-  childParameters:
-    - label: "'Interface'"
-      parameter: SSIDReference
-    - label: "'Security'"
-      parameter: Security.ModeEnabled
-    - label: "'Password'"
-      parameter: Security.KeyPassphrase
-    - label: "'Client'"
-      parameter: AssociatedDeviceNumberOfEntries
-    - label: "'Aktif'"
-      parameter: Enable
 - label: "'DHCPv4 hosts'"
   parameter: Device.Hosts.Host
   type: "'parameter-table'"
